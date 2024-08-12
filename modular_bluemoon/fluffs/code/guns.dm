@@ -580,3 +580,64 @@
 	desc = "A modkit for making a MultiPhase Energy Gun into Karabiner-M13."
 	product = /obj/item/gun/energy/e_gun/hos/karabiner_m13
 	fromitem = list(/obj/item/gun/energy/e_gun/hos)
+
+//////////////////////////Модкиты на дробовик
+
+/obj/item/modkit/frontline
+	name = " CS-Frontline-2534 Kit"
+	desc = "A modkit for making a combat shotgun into a CS-Frontline-2534."
+	product = /obj/item/gun/ballistic/shotgun/automatic/combat/frontline
+	fromitem = list(/obj/item/gun/ballistic/shotgun/automatic/combat)
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/frontline
+	name = "CS-Frontline-2534"
+	desc = "A standard assault automatic shotgun with a 7-shot magazine used by the Catcrin Empire army"
+	icon = 'modular_bluemoon/fluffs/icons/obj/csfrontline.dmi'
+	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_left.dmi'
+	righthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_right.dmi'
+	icon_state = "csfrontline"
+	item_state = "csfrontline"
+	fire_sound = 'modular_bluemoon/fluffs/sound/weapon/frontlineshot.ogg'
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/frontline/update_overlays()
+	. = ..()
+	icon_state = "csfrontline[stock ? "" : "c"]"
+	item_state = "csfrontline[stock ? "" : "c"]"
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/frontline
+	name = "CS-Frontline-2534"
+	desc = "A standard assault automatic shotgun with a 7-shot magazine used by the Catcrin Empire army"
+	icon = 'modular_bluemoon/fluffs/icons/obj/csfrontline.dmi'
+	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_left.dmi'
+	righthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_right.dmi'
+	icon_state = "csfrontline"
+	item_state = "csfrontline"
+	fire_sound = "modular_bluemoon/fluffs/sound/weapon/frontlineshot.ogg"
+	stock = FALSE
+	extend_sound = 'sound/weapons/batonextend.ogg'
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/frontline/update_icon_state()
+	icon_state = "csfrontline[stock ? "" : "c"]-[get_ammo(FALSE)]"
+	item_state = "csfrontline[stock ? "" : "c"]-[get_ammo(FALSE)]"
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/frontline/update_overlays()
+	. = ..()
+	icon_state = "csfrontline[stock ? "" : "c"]-[get_ammo(FALSE)]"
+	item_state = "csfrontline[stock ? "" : "c"]-[get_ammo(FALSE)]"
+
+
+/obj/item/modkit/cmg_kit
+	name = "Combat MG Kit"
+	desc = "A modkit for making an combat knife into a Combat MG."
+	product = /obj/item/kitchen/knife/combat/cmg
+	fromitem = list(/obj/item/kitchen/knife/combat)
+
+/obj/item/kitchen/knife/combat/cmg
+	name = "Combat MG"
+	desc = "It is a straight sword with blade made of iron and plasteel alloy. Its handle is covered with cloth for better grip as a sort of field modification, with the emblem of Rohai engraved under it. It doesn't feel well balanced or sharp enough, but at least may look stylish"
+	item_state = "cmg"
+	icon_state = "cmg"
+	icon = 'modular_bluemoon/fluffs/icons/obj/cmg.dmi'
+	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_left.dmi'
+	righthand_file = 'modular_bluemoon/fluffs/icons/mob/guns_right.dmi'
+	mob_overlay_icon = 'modular_bluemoon/fluffs/icons/mob/back.dmi'
