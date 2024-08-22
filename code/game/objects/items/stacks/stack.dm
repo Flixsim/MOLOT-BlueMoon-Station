@@ -153,7 +153,7 @@
 
 /obj/item/stack/examine(mob/user)
 	. = ..()
-	if (is_cyborg)
+	if(is_cyborg)
 		if(singular_name)
 			. += "There is enough energy for [get_amount()] [singular_name]\s."
 		else
@@ -393,7 +393,7 @@
 /obj/item/stack/use(used, transfer = FALSE, check = TRUE) // return FALSE = borked; return TRUE = had enough
 	if(check && zero_amount())
 		return FALSE
-	if (is_cyborg)
+	if(is_cyborg)
 		. = source.use_charge(used * cost)
 		update_icon()
 		return
@@ -436,7 +436,7 @@
  * - _amount: The number of units to add to this stack.
  */
 /obj/item/stack/proc/add(_amount)
-	if (is_cyborg)
+	if(is_cyborg)
 		source.add_charge(_amount * cost)
 	else
 		amount += _amount
