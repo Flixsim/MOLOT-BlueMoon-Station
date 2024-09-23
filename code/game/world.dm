@@ -33,7 +33,7 @@ GLOBAL_LIST(topic_status_cache)
 	config.Load(params[OVERRIDE_CONFIG_DIRECTORY_PARAMETER])
 
 	load_admins()
-	load_mentors()
+	//load_mentors() BLUEMOON EDIT
 
 	//SetupLogs depends on the RoundID, so lets check
 	//DB schema and set RoundID if we can
@@ -332,7 +332,7 @@ GLOBAL_LIST(topic_status_cache)
 	if(NUM2SECLEVEL(GLOB.security_level))
 		. += "[NUM2SECLEVEL(GLOB.security_level)] alert, "
 
-	. += "[get_active_player_count(afk_check = TRUE)] playing"
+	. += "[get_total_player_count()] playing"
 
 	status = .
 

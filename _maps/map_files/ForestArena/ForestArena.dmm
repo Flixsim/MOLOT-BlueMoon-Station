@@ -126,7 +126,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "aL" = (
 /obj/structure/flora/junglebush/large,
@@ -540,7 +540,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "fy" = (
 /obj/structure/table/wood,
@@ -667,7 +667,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "gA" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1561,7 +1561,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "px" = (
 /turf/open/floor/wood{
@@ -1780,7 +1780,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "ry" = (
 /obj/structure/table/wood,
@@ -2096,7 +2096,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "vF" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -2406,7 +2406,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "yQ" = (
 /obj/structure/table/glass,
@@ -2439,7 +2439,7 @@
 /area/hilbertshotel)
 "za" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "zb" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -2804,7 +2804,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "CY" = (
 /obj/machinery/light/small{
@@ -3037,7 +3037,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "FI" = (
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
@@ -3218,7 +3218,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "Hn" = (
 /obj/machinery/vending/boozeomat{
@@ -3733,7 +3733,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "MI" = (
 /obj/effect/turf_decal/tile/blue{
@@ -3905,7 +3905,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "OE" = (
 /obj/structure/barricade/wooden/snowed{
@@ -4174,7 +4174,7 @@
 /turf/open/floor/plating/dirt/jungle,
 /area/space)
 "Rf" = (
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "Rp" = (
 /obj/structure/flora/junglebush/large,
@@ -4355,7 +4355,7 @@
 /turf/open/floor/grass,
 /area/space)
 "SZ" = (
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "Ta" = (
 /obj/machinery/light/small{
@@ -4532,7 +4532,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "UV" = (
 /obj/effect/spawner/lootdrop/coin,
@@ -4654,7 +4654,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "Wb" = (
 /turf/open/floor/wood,
@@ -4669,7 +4669,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "Wj" = (
 /obj/machinery/conveyor{
@@ -4827,7 +4827,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/space)
 "XJ" = (
 /obj/structure/chair/pew/left{

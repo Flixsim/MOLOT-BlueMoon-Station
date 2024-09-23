@@ -2343,7 +2343,7 @@
 /obj/docking_port/stationary{
 	dwidth = 2;
 	height = 7;
-	id = "pod_away";
+	shuttle_id = "pod_away";
 	name = "recovery ship";
 	width = 5
 	},
@@ -2430,7 +2430,7 @@
 /obj/docking_port/stationary{
 	dwidth = 1;
 	height = 4;
-	id = "pod_3_away";
+	shuttle_id = "pod_3_away";
 	name = "recovery ship";
 	width = 3
 	},
@@ -2715,7 +2715,7 @@
 	dir = 8;
 	dwidth = 8;
 	height = 7;
-	id = "supply_away";
+	shuttle_id = "supply_away";
 	json_key = "cargo";
 	name = "CentCom";
 	width = 20
@@ -3102,7 +3102,7 @@
 /obj/docking_port/stationary{
 	dwidth = 1;
 	height = 4;
-	id = "pod_2_away";
+	shuttle_id = "pod_2_away";
 	name = "recovery ship";
 	width = 3
 	},
@@ -3633,7 +3633,7 @@
 	dheight = 5;
 	dwidth = 5;
 	height = 10;
-	id = "lambda_away";
+	shuttle_id = "lambda_away";
 	name = "Lambda Shuttle Dock";
 	roundstart_template = /datum/map_template/shuttle/lambda/code;
 	width = 10;
@@ -4603,7 +4603,7 @@
 /area/syndicate_mothership)
 "axD" = (
 /obj/structure/lattice/catwalk,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "axK" = (
 /obj/effect/decal/remains/xeno/larva,
@@ -4633,7 +4633,7 @@
 /obj/docking_port/stationary{
 	dwidth = 1;
 	height = 4;
-	id = "pod_4_away";
+	shuttle_id = "pod_4_away";
 	name = "recovery ship";
 	width = 3
 	},
@@ -4666,7 +4666,7 @@
 	dir = 1
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "ayh" = (
 /obj/structure/table/wood,
@@ -4860,7 +4860,7 @@
 	dir = 8;
 	dwidth = 2;
 	height = 13;
-	id = "ferry_away";
+	shuttle_id = "ferry_away";
 	json_key = "ferry";
 	name = "CentCom Ferry Dock";
 	width = 5
@@ -6907,7 +6907,7 @@
 	dir = 4
 	},
 /obj/structure/fans/tiny/invisible,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "aMs" = (
 /obj/effect/turf_decal/tile/red{
@@ -6918,7 +6918,7 @@
 /area/syndicate_mothership)
 "aMu" = (
 /obj/structure/railing,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "aMz" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -7939,7 +7939,7 @@
 	dir = 8;
 	dwidth = 12;
 	height = 17;
-	id = "syndicate_away";
+	shuttle_id = "syndicate_away";
 	name = "Syndicate Recon Outpost";
 	roundstart_template = /datum/map_template/shuttle/infiltrator/syndicate_basic;
 	width = 23
@@ -8004,7 +8004,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "aRV" = (
 /obj/effect/turf_decal/stripes/line{
@@ -8113,7 +8113,7 @@
 	dir = 8;
 	dwidth = 10;
 	height = 15;
-	id = "slaver_away";
+	shuttle_id = "slaver_away";
 	name = "slave trader hideout";
 	roundstart_template = /datum/map_template/shuttle/slaveship/basic;
 	width = 22
@@ -8777,7 +8777,7 @@
 "aVZ" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "aWa" = (
 /obj/effect/turf_decal/tile/red{
@@ -8947,7 +8947,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "aWG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8955,7 +8955,7 @@
 /area/slavers)
 "aWI" = (
 /obj/structure/lattice,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "aWJ" = (
 /obj/structure/railing{
@@ -9121,7 +9121,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "aXJ" = (
 /obj/structure/flora/rock/jungle{
@@ -9517,7 +9517,7 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership)
 "aZp" = (
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "aZq" = (
 /mob/living/simple_animal/bot/medbot{
@@ -10166,11 +10166,6 @@
 /obj/machinery/light/warm/directional/west,
 /turf/open/floor/plating/beach/sand,
 /area/centcom/holding)
-"byP" = (
-/obj/effect/decal/cleanable/ash,
-/obj/effect/mob_spawn/qareen/wendigo,
-/turf/open/indestructible/boss,
-/area/horny_antags/qareen)
 "bAf" = (
 /obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
@@ -11231,7 +11226,7 @@
 	dir = 8;
 	dwidth = 12;
 	height = 17;
-	id = "inteq_away";
+	shuttle_id = "inteq_away";
 	name = "InteQ Recon Outpost";
 	roundstart_template = /datum/map_template/shuttle/infiltrator/basic;
 	width = 23
@@ -11320,7 +11315,7 @@
 	area_type = /area/syndicate_mothership;
 	dwidth = 25;
 	height = 50;
-	id = "emergency_syndicate";
+	shuttle_id = "emergency_syndicate";
 	name = "InteQ Auxillary Shuttle Dock";
 	width = 50
 	},
@@ -12841,7 +12836,7 @@
 /obj/docking_port/stationary{
 	dwidth = 2;
 	height = 8;
-	id = "backup_away";
+	shuttle_id = "backup_away";
 	name = "Backup Shuttle Dock";
 	roundstart_template = /datum/map_template/shuttle/emergency/backup;
 	width = 8;
@@ -13940,7 +13935,7 @@
 /obj/structure/railing/corner{
 	dir = 1
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "eXp" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -17216,10 +17211,6 @@
 /obj/item/clothing/gloves/combat,
 /turf/open/floor/wood/wood_parquet,
 /area/syndicate_mothership/control)
-"hPX" = (
-/obj/effect/mob_spawn/qareen/wendigo_man,
-/turf/open/indestructible/boss,
-/area/horny_antags/qareen)
 "hPY" = (
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/holding)
@@ -17421,7 +17412,7 @@
 /obj/structure/railing/corner{
 	dir = 8
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "iad" = (
 /obj/structure/table,
@@ -17804,7 +17795,7 @@
 	dir = 2;
 	dwidth = 7;
 	height = 19;
-	id = "raiders_away";
+	shuttle_id = "raiders_away";
 	name = "InteQ raiders port";
 	width = 35
 	},
@@ -20495,7 +20486,7 @@
 	area_type = /area/syndicate_mothership;
 	dwidth = 25;
 	height = 50;
-	id = "emergency_real_syndicate";
+	shuttle_id = "emergency_real_syndicate";
 	name = "Syndicate Auxillary Shuttle Dock";
 	width = 50
 	},
@@ -21535,7 +21526,10 @@
 /turf/open/floor/plating,
 /area/syndicate_mothership/control)
 "lCL" = (
-/obj/machinery/jukebox,
+/obj/machinery/jukebox{
+	req_one_access = null;
+	one_area_play = 1
+	},
 /turf/open/indestructible/hotelwood,
 /area/centcom/holding)
 "lCM" = (
@@ -22596,7 +22590,7 @@
 "mGN" = (
 /obj/structure/railing,
 /obj/structure/window/reinforced,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "mGQ" = (
 /obj/machinery/light{
@@ -23140,7 +23134,7 @@
 	dir = 4;
 	dwidth = 25;
 	height = 50;
-	id = "emergency_away";
+	shuttle_id = "emergency_away";
 	json_key = "emergency";
 	name = "CentCom Emergency Shuttle Dock";
 	width = 50
@@ -26526,7 +26520,7 @@
 /area/centcom/control)
 "qrw" = (
 /obj/structure/light_prism,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/centcom/holding)
 "qrx" = (
 /obj/structure/table/reinforced,
@@ -29049,7 +29043,9 @@
 /area/centcom)
 "sCg" = (
 /obj/machinery/jukebox/disco{
-	set_obj_flags = "EMAGGED"
+	anchored = 1;
+	one_area_play = 1;
+	req_one_access = null
 	},
 /turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/centcom/holding)
@@ -29259,7 +29255,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "sKx" = (
 /turf/open/floor/plasteel/bluespace,
@@ -30844,7 +30840,7 @@
 "urG" = (
 /obj/structure/lattice,
 /obj/structure/lattice/catwalk,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/slavers)
 "urN" = (
 /obj/structure/table/wood,
@@ -30884,7 +30880,10 @@
 /turf/open/floor/iron/dark,
 /area/syndicate_mothership/control)
 "usu" = (
-/obj/machinery/jukebox,
+/obj/machinery/jukebox{
+	req_one_access = null;
+	one_area_play = 1
+	},
 /turf/open/floor/carpet/red,
 /area/centcom/holding)
 "usy" = (
@@ -31532,7 +31531,7 @@
 /turf/open/floor/iron/smooth,
 /area/centcom/evac)
 "uUD" = (
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/centcom/holding)
 "uUM" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -31647,15 +31646,15 @@
 /turf/open/floor/grass,
 /area/centcom/control)
 "vaV" = (
-/obj/item/toy/poolnoodle,
-/obj/item/toy/poolnoodle,
-/obj/item/toy/poolnoodle,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/red,
-/obj/item/toy/poolnoodle/yellow,
-/obj/item/toy/poolnoodle/yellow,
-/obj/item/toy/poolnoodle/yellow,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle,
+/obj/item/pool/pool_noodle/red,
+/obj/item/pool/pool_noodle/red,
+/obj/item/pool/pool_noodle/red,
+/obj/item/pool/pool_noodle/yellow,
+/obj/item/pool/pool_noodle/yellow,
+/obj/item/pool/pool_noodle/yellow,
 /obj/machinery/pool/controller,
 /turf/open/indestructible/hotelwood,
 /area/centcom/holding)
@@ -33545,7 +33544,7 @@
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/machinery/jukebox{
 	req_one_access = null;
-	set_obj_flags = "EMAGGED"
+	one_area_play = 1
 	},
 /obj/structure/sign/poster/contraband/bountyhunters{
 	pixel_y = 32
@@ -33604,7 +33603,11 @@
 /turf/open/floor/iron/white,
 /area/centcom/holding)
 "wQH" = (
-/obj/machinery/jukebox/disco,
+/obj/machinery/jukebox/disco{
+	req_one_access = null;
+	anchored = 1;
+	one_area_play = 1
+	},
 /turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/centcom/holding)
 "wQW" = (
@@ -35222,6 +35225,10 @@
 /mob/living/simple_animal/deer,
 /turf/open/floor/grass/grass2,
 /area/centcom/control)
+"ylX" = (
+/obj/effect/mob_spawn/qareen/wendigo_lore,
+/turf/open/indestructible/boss,
+/area/horny_antags/qareen)
 "yma" = (
 /obj/structure/grille,
 /turf/open/space/basic,
@@ -49581,11 +49588,11 @@ aaa
 aaa
 aaa
 wIy
-byP
+eyk
 qWG
 qWG
 tzG
-hPX
+qWG
 wIy
 aaa
 aaa
@@ -50095,11 +50102,11 @@ aaa
 aaa
 aaa
 wIy
-qWG
+ylX
 pha
 qWG
 qWG
-qWG
+ylX
 wIy
 aaa
 aaa

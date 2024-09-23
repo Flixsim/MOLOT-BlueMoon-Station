@@ -1,6 +1,6 @@
 /datum/parallax/space
-	var/static/planet_offset_x = 125
-	var/static/planet_offset_y = 125
+	var/static/planet_offset_x = rand(100, 130)
+	var/static/planet_offset_y = rand(100, 130)
 	var/static/random_layer = pickweightAllowZero(list(
 		/atom/movable/screen/parallax_layer/space/random/asteroids = 35,
 		/atom/movable/screen/parallax_layer/space/random/space_gas = 35,
@@ -13,12 +13,10 @@
 	. += new /atom/movable/screen/parallax_layer/space/layer_1
 	. += new /atom/movable/screen/parallax_layer/space/layer_2
 	. += new /atom/movable/screen/parallax_layer/space/layer_3
-
 	var/atom/movable/screen/parallax_layer/space/planet/P = new
 	P.pixel_x = planet_offset_x
 	P.pixel_y = planet_offset_y
 	. += P
-
 	if(ispath(random_layer, /atom/movable/screen/parallax_layer))
 		. += new random_layer
 	if(ispath(random_layer, /atom/movable/screen/parallax_layer/space/random/space_gas))
@@ -45,7 +43,7 @@
 
 /atom/movable/screen/parallax_layer/space/random
 	blend_mode = BLEND_OVERLAY
-	speed = 3
+	speed = 2
 	layer = 3
 	parallax_intensity = PARALLAX_INSANE
 

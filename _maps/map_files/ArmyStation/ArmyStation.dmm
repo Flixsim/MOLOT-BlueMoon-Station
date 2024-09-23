@@ -189,13 +189,13 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "cu" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "cD" = (
 /obj/machinery/telecomms/processor/preset_one,
@@ -384,7 +384,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "el" = (
 /obj/machinery/door/airlock/security/glass{
@@ -407,7 +407,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "eu" = (
 /obj/structure/streetdecor/lamp,
@@ -491,7 +491,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "fa" = (
 /obj/machinery/vending/engivend,
@@ -685,7 +685,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "hk" = (
 /obj/structure/railing,
@@ -1307,7 +1307,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "mq" = (
 /obj/structure/railing{
@@ -1352,7 +1352,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "mR" = (
 /obj/structure/chair/comfy/black{
@@ -1568,7 +1568,7 @@
 /turf/open/misc/grass,
 /area/hilbertshotel)
 "ot" = (
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "ou" = (
 /obj/item/kitchen/knife/combat,
@@ -1617,7 +1617,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "oO" = (
 /mob/living/simple_animal/hostile/faithless,
@@ -1996,7 +1996,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "rN" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -2631,7 +2631,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "xb" = (
 /obj/effect/landmark/start/depsec/science,
@@ -2701,7 +2701,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "xv" = (
 /obj/machinery/hydroponics/soil,
@@ -3100,7 +3100,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "Br" = (
 /obj/structure/flora/tree/jungle/small,
@@ -3214,7 +3214,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "Ci" = (
 /obj/structure/flora/tree/jungle/small,
@@ -3820,7 +3820,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "GK" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -3829,7 +3829,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "GL" = (
 /obj/item/gun/ballistic/automatic/l6_saw/unrestricted,
@@ -5046,7 +5046,7 @@
 /area/hilbertshotel)
 "Rj" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "Rl" = (
 /obj/effect/landmark/start/depsec,
@@ -5403,7 +5403,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "TV" = (
 /obj/structure/rack,
@@ -5725,7 +5725,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "Wu" = (
 /obj/item/clothing/under/syndicate/rus_army_alt,
@@ -5949,7 +5949,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "Yf" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -6030,7 +6030,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "YL" = (
 /obj/structure/chair/office,
@@ -6094,7 +6094,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water/decorative,
+/turf/open/water/safe,
 /area/hilbertshotel)
 "Zi" = (
 /obj/effect/turf_decal/weather/dirt{

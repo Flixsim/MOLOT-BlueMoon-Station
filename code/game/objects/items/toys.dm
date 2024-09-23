@@ -7,7 +7,7 @@
  *		Toy swords
  *		Crayons
  *		Snap pops
- *		Mech prizes
+ *      Mech prizes
  *		AI core prizes
  *		Toy codex gigas
  * 		Skeleton toys
@@ -18,12 +18,11 @@
  *		Toy big red button
  *		Beach ball
  *		Toy xeno
- *      Kitty toys!
+ *  	Kitty toys!
  *		Snowballs
  *		Clockwork Watches
  *		Toy Daggers
  */
-
 
 /obj/item/toy
 	throwforce = 0
@@ -39,7 +38,7 @@
 /obj/item/toy/balloon
 	name = "water balloon"
 	desc = "A translucent balloon. There's nothing in it."
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "waterballoon-e"
 	item_state = "balloon-empty"
 
@@ -379,7 +378,7 @@
 /obj/item/toy/foamblade
 	name = "foam armblade"
 	desc = "It says \"Sternside Changs #1 fan\" on it."
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "foamblade"
 	item_state = "arm_blade"
 	lefthand_file = 'icons/mob/inhands/antag/changeling_lefthand.dmi'
@@ -510,7 +509,7 @@
 /obj/item/toy/snappop
 	name = "snap pop"
 	desc = "Wow!"
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "snappop"
 	w_class = WEIGHT_CLASS_TINY
 	var/ash_type = /obj/effect/decal/cleanable/ash
@@ -546,7 +545,7 @@
 	ash_type = /obj/effect/decal/cleanable/ash/snappop_phoenix
 
 /obj/effect/decal/cleanable/ash/snappop_phoenix
-	var/respawn_time = 300
+	var/respawn_time = 30 SECONDS
 
 /obj/effect/decal/cleanable/ash/snappop_phoenix/Initialize(mapload)
 	. = ..()
@@ -556,7 +555,6 @@
 /obj/effect/decal/cleanable/ash/snappop_phoenix/proc/respawn()
 	new /obj/item/toy/snappop/phoenix(get_turf(src))
 	qdel(src)
-
 
 /*
  * Mech prizes
@@ -643,11 +641,10 @@
 	icon_state = "reticenceprize"
 	quiet = 1
 
-
 /obj/item/toy/talking
 	name = "talking action figure"
 	desc = "A generic action figure modeled after nothing in particular."
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "owlprize"
 	w_class = WEIGHT_CLASS_SMALL
 	var/cooldown = FALSE
@@ -776,7 +773,7 @@
 /obj/item/toy/cards/deck
 	name = "deck of cards"
 	desc = "A deck of space-grade playing cards."
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	deckstyle = "nanotrasen"
 	icon_state = "deck_nanotrasen_full"
 	w_class = WEIGHT_CLASS_SMALL
@@ -893,8 +890,8 @@
 /obj/item/toy/cards/cardhand
 	name = "hand of cards"
 	desc = "A number of cards not in a deck, customarily held in ones hand."
-	icon = 'icons/obj/toy.dmi'
-	icon_state = "none"
+	icon = 'icons/obj/toys/toy.dmi'
+	icon_state = "nanotrasen_hand2"
 	w_class = WEIGHT_CLASS_TINY
 	var/list/currenthand = list()
 	var/choice = null
@@ -989,8 +986,8 @@
 
 /obj/item/toy/cards/singlecard
 	name = "card"
-	desc = "A card."
-	icon = 'icons/obj/toy.dmi'
+	desc = "A card"
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "singlecard_down_nanotrasen"
 	w_class = WEIGHT_CLASS_TINY
 	var/cardname = null
@@ -1114,7 +1111,7 @@
 /obj/item/toy/nuke
 	name = "\improper Nuclear Fission Explosive toy"
 	desc = "A plastic model of a Nuclear Fission Explosive."
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "nuketoyidle"
 	w_class = WEIGHT_CLASS_SMALL
 	var/cooldown = 0
@@ -1141,7 +1138,7 @@
 /obj/item/toy/minimeteor
 	name = "\improper Mini-Meteor"
 	desc = "Relive the excitement of a meteor shower! SweetMeat-eor. Co is not responsible for any injuries, headaches or hearing loss caused by Mini-Meteor."
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "minimeteor"
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -1184,7 +1181,7 @@
 /obj/item/toy/snowball
 	name = "snowball"
 	desc = "A compact ball of snow. Good for throwing at people."
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "snowball"
 	throwforce = 12 //pelt your enemies to death with lumps of snow
 	damtype = STAMINA
@@ -1258,7 +1255,7 @@
  */
 
 /obj/item/toy/toy_xeno
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "toy_xeno"
 	name = "xenomorph action figure"
 	desc = "MEGA presents the new Xenos Isolated action figure! Comes complete with realistic sounds! Pull back string to use."
@@ -1287,7 +1284,7 @@
 /obj/item/toy/cattoy
 	name = "toy mouse"
 	desc = "A colorful toy mouse!"
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "toy_mouse"
 	w_class = WEIGHT_CLASS_SMALL
 	var/cooldown = 0
@@ -1524,7 +1521,7 @@
 /obj/item/toy/dummy
 	name = "ventriloquist dummy"
 	desc = "It's a dummy, dummy."
-	icon = 'icons/obj/toy.dmi'
+	icon = 'icons/obj/toys/toy.dmi'
 	icon_state = "assistant"
 	item_state = "doll"
 	var/doll_name = "Dummy"
@@ -1627,3 +1624,76 @@
 	name = "Therapy Doll Capsule"
 	desc = "Contains one squishy therapy doll."
 	possible_contents = list(/obj/effect/spawner/lootdrop/therapy)
+
+////////////////////
+//money eater/maker//
+////////////////////
+
+/obj/item/gobbler
+	name = "Coin Gobbler"
+	desc = "Feed it credits, and activate it, with a chance to spit out DOUBLE the amount!"
+	icon = 'icons/obj/plushes.dmi'
+	icon_state = "debug"
+	var/money = 0
+	var/moneyeaten = 0
+	var/cooldown = 0
+	var/cooldowndelay = 20
+	w_class = WEIGHT_CLASS_NORMAL
+
+/obj/item/gobbler/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>The Coin Gobbler holds [money] credits.</span>"
+
+/obj/item/gobbler/attackby()
+	return
+
+/obj/item/gobbler/attack_self(mob/user)
+	if(cooldown > world.time)
+		return
+	cooldown = world.time + cooldowndelay
+	if (money<=0)
+		to_chat(user, "<span class='notice'>The [src] has no money stored.</span>")
+		return
+
+	playsound(src.loc, 'sound/creatures/rattle.ogg', 10, 1)
+	user.visible_message("<span class='notice'>[src]'s eyes start spinning! What will happen?</span>", \
+		"<span class='notice'>You activate [src].</span>")
+	sleep(10)
+
+	if(prob(33*(777+moneyeaten-money)/777))
+		playsound(src.loc, 'sound/arcade/win.ogg', 10, 1)
+		user.visible_message("<span class='warning'>[src] cashes out! [user] starts spitting credits!</span>", \
+		"<span class='notice'>[src] cashes out!</span>")
+		var/obj/item/holochip/payout = new (user.drop_location(), money*2)
+		payout.throw_at( get_step(loc,user.dir) ,3,1,user)
+		moneyeaten-=money
+		money=0
+	else
+		user.visible_message("<span class='notice'>[src] gobbles up all the money!</span>", \
+		"<span class='notice'>[src] gobbles up all the money!</span>")
+		moneyeaten+=money
+		money=0
+		playsound(src.loc, 'sound/machines/buzz-sigh.ogg', 10, 1)
+
+/obj/item/gobbler/afterattack(atom/A, mob/user, proximity)
+	. = ..()
+	if(!proximity)
+		return
+	var/cash_money = 0
+
+	if(istype(A, /obj/item/holochip))
+		var/obj/item/holochip/HC = A
+		cash_money = HC.get_item_credit_value()
+	else if(istype(A, /obj/item/stack/spacecash))
+		var/obj/item/stack/spacecash/SC = A
+		cash_money = SC.get_item_credit_value()
+	else if(istype(A, /obj/item/coin))
+		var/obj/item/coin/CN = A
+		cash_money = CN.get_item_credit_value()
+
+	if (!cash_money)
+		to_chat(user, "<span class='warning'>[src] spits out [A] as it is not worth anything!</span>")
+		return
+	money+=cash_money
+	to_chat(user, "<span class='notice'>[src] quicky gobbles up [A], and the value goes up by [cash_money].</span>")
+	qdel(A)

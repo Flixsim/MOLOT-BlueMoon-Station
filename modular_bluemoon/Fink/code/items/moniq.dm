@@ -162,6 +162,10 @@
 /obj/item/sign/moniq/proc/activate_music()
 	if(playing || !queuedplaylist.len)
 		return FALSE
+	// Making sure not to play track if all jukebox channels are busy. That shouldn't happen.
+	if(!SSjukeboxes.freejukeboxchannels.len)
+		say("Cannot play song: limit of currently playing tracks has been exceeded.")
+		return FALSE
 	playing = queuedplaylist[1]
 	var/jukeboxslottotake = SSjukeboxes.addjukebox(src, playing, volume/35, one_area_play) //BLUEMOON EDIT
 	if(jukeboxslottotake)
@@ -216,7 +220,6 @@
 	icon_state = "moniq_wallmount"
 	verb_say = "states"
 	density = FALSE
-	req_one_access = list(ACCESS_BAR, ACCESS_KITCHEN, ACCESS_HYDROPONICS, ACCESS_ENGINE, ACCESS_CARGO, ACCESS_THEATRE)
 	var/active = FALSE
 	var/list/rangers = list()
 	var/stop = 0
@@ -369,6 +372,10 @@
 
 /obj/structure/sign/moniq/proc/activate_music()
 	if(playing || !queuedplaylist.len)
+		return FALSE
+	// Making sure not to play track if all jukebox channels are busy. That shouldn't happen.
+	if(!SSjukeboxes.freejukeboxchannels.len)
+		say("Cannot play song: limit of currently playing tracks has been exceeded.")
 		return FALSE
 	playing = queuedplaylist[1]
 	var/jukeboxslottotake = SSjukeboxes.addjukebox(src, playing, volume/35, one_area_play) //BLUEMOON EDIT

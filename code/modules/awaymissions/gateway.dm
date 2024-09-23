@@ -244,7 +244,7 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 	portal_visuals.reset_visuals()
 
 /obj/machinery/gateway/process()
-	if((stat & (NOPOWER)) && use_power)
+	if((machine_stat & (NOPOWER)) && use_power)
 		teleportion_possible = FALSE
 		if(target)
 			deactivate()
@@ -384,10 +384,16 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 	desc = "Human friendly interface to the mysterious gate next to it."
 	req_access = list(ACCESS_GATEWAY) //SKYRAT EDIT ADDITION
 	var/obj/machinery/gateway/G
+	var/list/available_missions
+	var/cooldown_time = 30 MINUTES
+	var/next_use_time = 0
 
 /obj/machinery/computer/gateway_control/Initialize(mapload, obj/item/circuitboard/C)
 	. = ..()
-	try_to_linkup()
+	available_missions = list()
+	for(var/mission_file in GLOB.potential_away_levels)
+		var/mission_name = copytext(mission_file, 1, -4) // Remove .dmm extension
+		available_missions[mission_name] = mission_file
 
 /obj/machinery/computer/gateway_control/ui_interact(mob/user, datum/tgui/ui)
 	. = ..()
@@ -434,6 +440,34 @@ GLOBAL_LIST_EMPTY(gateway_destinations)
 			if(G?.target)
 				G.deactivate()
 			return TRUE
+		if("load_mission")
+			if(next_use_time > world.time)
+				to_chat(usr, "<span class='warning'>The gateway is still recharging!</span>")
+				return
+			var/mission_name = params["mission"]
+			if(mission_name in available_missions)
+				load_mission(mission_name)
+				next_use_time = world.time + cooldown_time
+			return TRUE
+
+/obj/machinery/computer/gateway_control/proc/load_mission(mission_name)
+	var/mission_file = available_missions[mission_name]
+	var/z_level = G.z
+
+	// Unload current mission
+	if(G.target)
+		G.deactivate()
+		for(var/turf/T in block(locate(1, 1, z_level), locate(world.maxx, world.maxy, z_level)))
+			T.empty()
+
+	// Load new mission
+	var/datum/map_template/away_mission = new(mission_file)
+	away_mission.load(locate(1, 1, z_level), centered = FALSE)
+
+	// Set up new gateway destination
+	var/datum/gateway_destination/point/new_destination = new
+	new_destination.target_turfs = list(locate(/obj/effect/landmark/awaystart) in GLOB.landmarks_list)
+	G.activate(new_destination)
 
 /obj/machinery/computer/gateway_control/ui_close(mob/user)
 	. = ..()

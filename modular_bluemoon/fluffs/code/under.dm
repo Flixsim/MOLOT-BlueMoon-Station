@@ -122,3 +122,59 @@
 	can_adjust = FALSE
 	lefthand_file = 'modular_bluemoon/fluffs/icons/mob/inhands/clothing_right.dmi'
 	righthand_file = 'modular_bluemoon/fluffs/icons/mob/inhands/clothing_right.dmi'
+
+/obj/item/clothing/under/donator/bm/SATT_combat_uniform
+	name = "SATT combat uniform"
+	desc = "High-quality clothes made of a mixture of fleece and cotton. The logo in the form of an eagle and the caption of the Strategic Assault Tactical Team are visible on the tag. If you inhale the smell, you can smell the slices of a war crime."
+	icon_state = "SATTcombat"
+	item_state = "SATTcombat"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/donator/bm/SATT_turtleneck
+	name = "SATT turtleneck"
+	desc = "High-quality clothes made of a mixture of fleece and cotton. The logo in the form of an eagle and the caption of the Strategic Assault Tactical Team are visible on the tag. If you inhale the smell, you can smell the slices of a war crime."
+	icon_state = "SATTturtleneck"
+	item_state = "SATTturtleneck"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/donator/bm/SATT_vdv
+	name = "SATT VDV uniform"
+	desc = "High-quality clothes made of a mixture of fleece and cotton. The logo in the form of an eagle and the caption of the Strategic Assault Tactical Team are visible on the tag. If you inhale the smell, you can smell the slices of a war crime."
+	icon_state = "SATTvdv"
+	item_state = "SATTvdv"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/donator/bm/aki_camo
+	name = "Old Guard NRI uniform"
+	desc = "A sample of the old uniform of the border special forces-troops of the NRI Guard. This one is adapted for anthropomorphs."
+	icon_state = "adlercamo"
+	item_state = "adlercamo"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/donator/bm/aki_adler_camo
+	name = "Adler Peacekeeper uniform"
+	desc = "Peacekeeper uniforms are custom-made for corporations in the Taywar sector. Simulates all the features of Merenid biology to perfectly match any personality, as well as some types of low-quality races."
+	icon_state = "adlerpk"
+	item_state = "adlerpk"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/donator/bm/aki_exo
+	name = "L.E.S."
+	desc = "Lightweight Exo Skeleton. An exoskeleton for performing simple jobs using pneumatic amplifiers and engineering magic. No, it does not connect to your spine, but it is also adapted to this. It is sometimes used for medical purposes after spinal or lower limb injuries. It can completely replace your old piece of meat with a modern equivalent."
+	icon_state = "adlerexo"
+	item_state = "adlerexo"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/donator/bm/aki_engie
+	name = "Corporate S.E.U."
+	desc = "Corporate Standardized Engineering Uniforms. The uniform of engineering workers used by several large corporations on Tayvar. It is equipped with additional gaskets to reduce the risk of injury and special signs to indicate the engineering level of access."
+	icon_state = "adlerengie"
+	item_state = "adlerengie"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/donator/bm/laskahosskirt
+	name = "HOS cosplay skirt."
+	desc = "Skirt that looks like HOS one"
+	icon_state = "laskahosskirt"
+	item_state = "laskahosskirt"
+	can_adjust = TRUE
