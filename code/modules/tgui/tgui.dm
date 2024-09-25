@@ -67,7 +67,7 @@
 		src.title = title
 	src.state = src_object.ui_state(user)
 	src.parent_ui = parent_ui
-	if(parent_ui)
+	if(parent_ui && parent_ui != 500)
 		parent_ui.children += src
 	// Deprecated
 	if(ui_x && ui_y)
@@ -145,7 +145,7 @@
 		src_object.ui_close(user)
 		SStgui.on_close(src)
 	state = null
-	if(parent_ui)
+	if(parent_ui && parent_ui != 500)
 		parent_ui.children -= src
 	parent_ui = null
 	qdel(src)
@@ -309,7 +309,7 @@
 /datum/tgui/proc/process_status()
 	var/prev_status = status
 	status = src_object.ui_status(user, state)
-	if(parent_ui)
+	if(parent_ui && parent_ui != 500)
 		status = min(status, parent_ui.status)
 	return prev_status != status
 
